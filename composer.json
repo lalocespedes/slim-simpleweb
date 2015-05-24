@@ -1,0 +1,14 @@
+{
+    "name": "vagrant/slim-simpleweb",
+    "authors": [
+        {
+            "name": "lalocespedes",
+            "email": "lalocespedes@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^2.6",
+        "slim/views": "^0.1.3",
+        "twig/twig": "^1.18"
+    }
+}
