@@ -40,6 +40,8 @@ $app->post('/contact', function () use($app) {
     $cleanEmail = filter_var($email, FILTER_SANITIZE_EMAIL);
     $cleanMsg = filter_var($msg, FILTER_SANITIZE_STRING);
   } else {
+
+    $app->flash('fail', 'All fields are required!');
     $app->redirect('/contact');
   }
   	
@@ -61,12 +63,13 @@ $app->post('/contact', function () use($app) {
   
   if($result > 0) {
   	
-  	$app->flash('global', 'Email send successfully!');
+  	$app->flash('success', 'Email send successfully!');
 
     $app->redirect('/');
     
   } else {
   
+    $app->flash('fail', 'There was a error, try again!');
     $app->redirect('/contact');
   }
     

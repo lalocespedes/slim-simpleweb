@@ -61,12 +61,15 @@ FEEDBACK
 
 .dismiss {
   float: right;
+  color: #eee;
   padding: 30px 0;
   opacity: .7;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .dismiss:hover {
+  color: #eee;
   opacity: 1;
   text-decoration: none;
 }
