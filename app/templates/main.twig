@@ -23,7 +23,7 @@
     <p>You're reading all about Emerson.</p>
   </div>
 -->
-
+{% include 'partials/messages.twig' %}
 
   <header>
     <h1>Ralph Waldo Emerson</h1>
@@ -34,7 +34,12 @@
   </header>
 
 
+  <div class="emerson">
+      {% block heroe %} <img src="images/emerson.jpg" alt="Picture of Ralph Waldo Emerson">  {% endblock heroe %}
 
+  </div>
+
+  
   <main>
       {% block content %}
       {% endblock content %}
